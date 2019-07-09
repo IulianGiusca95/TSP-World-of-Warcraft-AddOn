@@ -4,7 +4,7 @@ This project resembles my final project for my undergraduate degree. It implemen
 
 In short, given a set of towns which are connected by roads, a salesman wants to visit each town only once (and eventually return to his homecity). It is required to find such a path that minimizes the distance the salesman has to walk.
 
-Using the World of Warcraft API which is made available by Blizzard, i extracted the coordinates of all currently available Quests (they are the Objectives) and tested different approaches to solve TSP.
+Using the World of Warcraft API which is made available by Blizzard, i extracted the coordinates of all currently available Quests (they are the Objectives) and tested different approaches to solve TSP. I have extended the problem by adding Time constraints (the average time it takes for a player to finish a quest) and Terrain constraints (some regions in-game are inaccessible to users, so the path between two Objectives can't always be straight)
 
 # Running the Code
 
