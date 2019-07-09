@@ -1,6 +1,6 @@
 # World-of-Warcraft-AddOn
 
-This project resembled my final project for my undergraduate degree. It implements an heuristic approach to the Travelling Salesman Problem, which remains unsolved due to the fact that it is NP-Complete. 
+This project resembles my final project for my undergraduate degree. It implements an heuristic approach to the Travelling Salesman Problem, which remains unsolved due to the fact that it is NP-Complete. 
 
 In short, given a set of towns which are connected by roads, a salesman wants to visit each town only once (and eventually return to his homecity). It is required to find such a path that minimizes the distance the salesman has to walk.
 
