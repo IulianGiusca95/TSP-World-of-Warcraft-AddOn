@@ -1,4 +1,4 @@
-# World-of-Warcraft-AddOn
+# World of Warcraft AddOn
 
 This project resembles my final project for my undergraduate degree. It implements an heuristic approach to the Travelling Salesman Problem, which remains unsolved due to the fact that it is NP-Complete. 
 
