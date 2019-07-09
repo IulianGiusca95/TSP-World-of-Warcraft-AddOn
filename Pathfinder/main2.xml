@@ -1,0 +1,183 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+http://wowprogramming.com/FrameXML/UI.xsd">
+
+
+
+<Frame name="mainPanel" parent="UIParent" visible="false">
+	<Size x="1024" y="512"/>
+	<Anchors>
+		<Anchor point="CENTER" relativePoint="CENTER" relativeTo="UIParent"/>
+	</Anchors>
+
+	<Layers>
+		<Layer level = "BACKGROUND">
+			<Texture file="Interface\ACHIEVEMENTFRAME\UI-GuildAchievement-Parchment-Horizontal-Desaturated">
+				<Size>
+					<AbsDimension x="1024" y="512"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT"/>
+				</Anchors>
+			</Texture>
+		</Layer>
+		<Layer level="BORDER">
+			
+			
+			<Texture file="Interface\GLUES\CREDITS\Legion\NashalStatue1">
+				<Size>
+					<AbsDimension x="256" y="256"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT"/>
+				</Anchors>
+			</Texture>
+
+			<Texture file="Interface\GLUES\CREDITS\Legion\NashalStatue2">
+				<Size>
+					<AbsDimension x="256" y="256"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="256" y="0"/>
+					</Anchor>
+				</Anchors>
+			</Texture>
+			
+			<Texture file="Interface\GLUES\CREDITS\Legion\NashalStatue3">
+				<Size>
+					<AbsDimension x="256" y="256"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="512" y="0"/>
+					</Anchor>
+				</Anchors>
+			</Texture>
+
+			<Texture file="Interface\GLUES\CREDITS\Legion\NashalStatue4">
+				<Size>
+					<AbsDimension x="256" y="256"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="768" y="0"/>
+					</Anchor>
+				</Anchors>
+			</Texture>
+
+<Texture file="Interface\GLUES\CREDITS\Legion\NashalStatue5">
+				<Size>
+					<AbsDimension x="256" y="256"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="0" y="-256"/>
+					</Anchor>
+				</Anchors>
+			</Texture>	
+
+<Texture file="Interface\GLUES\CREDITS\Legion\NashalStatue6">
+				<Size>
+					<AbsDimension x="256" y="256"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="256" y="-256"/>
+					</Anchor>
+				</Anchors>
+			</Texture>	
+
+<Texture file="Interface\GLUES\CREDITS\Legion\NashalStatue7">
+				<Size>
+					<AbsDimension x="256" y="256"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="512" y="-256"/>
+					</Anchor>
+				</Anchors>
+			</Texture>	
+
+<Texture file="Interface\GLUES\CREDITS\Legion\NashalStatue8">
+				<Size>
+					<AbsDimension x="256" y="256"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset x="768" y="-256"/>
+					</Anchor>
+				</Anchors>
+			</Texture>				
+
+				
+		</Layer>
+	</Layers>
+	<Scripts>
+		<OnLoad function="loadFrame" />
+	</Scripts>
+</Frame>
+
+
+<!--
+<Button name="MyButtonTemplate" text="Close">
+	<Size x="150" y="45"/>
+	<Anchors>
+		<Anchor point="BOTTOM">
+			<Offset x="0" y="20"/>
+		</Anchor>
+	</Anchors>
+	<NormalTexture file="Interface\BUTTONS\UI-DialogBox-Button-Up" />
+	<PushedTexture file="Interface\Buttons\UI-DialogBox-Button-Gold-Down" />
+	<HighlightTexture file="Interface\Buttons\UI-DialogBox-Button-Gold-Up" alphaMode="ADD"/>
+</Button>
+-->
+
+<Button name="Button1" inherits="UIPanelButtonTemplate" parent="mainPanel" text="Generate Path" >
+	<Size x="150" y="35"/>
+	<Anchors>
+		<Anchor point="BOTTOM">
+			<Offset x="-181" y="20"/>
+		</Anchor>
+	</Anchors>
+	<Scripts>
+		<OnClick function="filterQuests" />
+	</Scripts>
+</Button>
+
+<Button name="Button3" inherits="UIPanelButtonTemplate" parent="mainPanel" text="Select All" >
+	<Size x="150" y="35"/>
+	<Anchors>
+		<Anchor point="BOTTOM">
+			<Offset x="200" y="20"/>
+		</Anchor>
+	</Anchors>
+	<Scripts>
+		<OnClick function="selectAll" />
+	</Scripts>
+</Button>
+
+<Button name="Button4" inherits="UIPanelButtonTemplate" parent="mainPanel" text="Deselect All" >
+	<Size x="150" y="35"/>
+	<Anchors>
+		<Anchor point="BOTTOM">
+			<Offset x="375" y="20"/>
+		</Anchor>
+	</Anchors>
+	<Scripts>
+		<OnClick function="deselectAll" />
+	</Scripts>
+</Button>
+
+<Button name="Button2" inherits="UIPanelCloseButton" parent="mainPanel" >
+	<Anchors>
+		<Anchor point="TOPRIGHT">
+			<Offset x="0" y="0"/>
+		</Anchor>
+	</Anchors>
+</Button>
+
+
+
+</Ui>

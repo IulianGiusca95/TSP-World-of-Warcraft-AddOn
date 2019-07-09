@@ -1,0 +1,64 @@
+
+local background1 = CreateFrame("Frame","back1",mainPanel)
+background1:SetSize(256,256);
+background1:SetPoint("TOPLEFT", mainPanel, "TOPLEFT",0,0);
+local texturebg1 = background1:CreateTexture(nil, "BACKGROUND")
+texturebg1:SetAllPoints()
+texturebg1:SetTexture("Interface\\GLUES\\CREDITS\\Pandaria\\dragon_bridge1")
+background1.texture = texturebg1;
+
+local background2 = CreateFrame("Frame","back2",mainPanel)
+background2:SetSize(256,256);
+background2:SetPoint("TOPLEFT", 256, 0);
+local texturebg2 = background2:CreateTexture(nil, "BACKGROUND")
+texturebg2:SetAllPoints()
+texturebg2:SetTexture("Interface\\GLUES\\CREDITS\\Pandaria\\dragon_bridge2")
+background2.texture = texturebg2;
+
+local background3 = CreateFrame("Frame","back3",mainPanel)
+background3:SetSize(256,256);
+background3:SetPoint("TOPLEFT", 512, 0);
+local texturebg3 = background3:CreateTexture(nil, "BACKGROUND")
+texturebg3:SetAllPoints()
+texturebg3:SetTexture("Interface\\GLUES\\CREDITS\\Pandaria\\dragon_bridge3")
+background3.texture = texturebg3;
+
+local background4 = CreateFrame("Frame","back4",mainPanel)
+background4:SetSize(256,256);
+background4:SetPoint("TOPLEFT", 768, 0);
+local texturebg4 = background4:CreateTexture(nil, "BACKGROUND")
+texturebg4:SetAllPoints()
+texturebg4:SetTexture("Interface\\GLUES\\CREDITS\\Pandaria\\dragon_bridge4")
+background4.texture = texturebg4;
+
+local background5 = CreateFrame("Frame","back5",mainPanel)
+background5:SetSize(256,256);
+background5:SetPoint("TOPLEFT", 0, -256);
+local texturebg5 = background5:CreateTexture(nil, "BACKGROUND")
+texturebg5:SetAllPoints()
+texturebg5:SetTexture("Interface\\GLUES\\CREDITS\\Pandaria\\dragon_bridge5")
+background5.texture = texturebg5;
+
+local background6 = CreateFrame("Frame","back6",mainPanel)
+background6:SetSize(256,256);
+background6:SetPoint("TOPLEFT", 256, -256);
+local texturebg6 = background6:CreateTexture(nil, "BACKGROUND")
+texturebg6:SetAllPoints()
+texturebg6:SetTexture("Interface\\GLUES\\CREDITS\\Pandaria\\dragon_bridge6")
+background6.texture = texturebg6;
+
+local background7 = CreateFrame("Frame","back7",mainPanel)
+background7:SetSize(256,256);
+background7:SetPoint("TOPLEFT", 512, -256);
+local texturebg7 = background7:CreateTexture(nil, "BACKGROUND")
+texturebg7:SetAllPoints()
+texturebg7:SetTexture("Interface\\GLUES\\CREDITS\\Pandaria\\dragon_bridge7")
+background7.texture = texturebg7;
+
+local background8 = CreateFrame("Frame","back8",mainPanel)
+background8:SetSize(256,256);
+background8:SetPoint("TOPLEFT", 768, -256);
+local texturebg8 = background8:CreateTexture(nil, "BACKGROUND")
+texturebg8:SetAllPoints()
+texturebg8:SetTexture("Interface\\GLUES\\CREDITS\\Pandaria\\dragon_bridge8")
+background8.texture = texturebg8;

@@ -1,0 +1,38 @@
+function Euler:DFS(start,visited,m,g,noduri,pas, Deadlines, Quests)
+   
+
+   noduri[table.getn(noduri)+1]=start;
+   if Euler:checkVisited(visited) == 1 then
+       return noduri;
+   end
+   pas = pas+1;
+   for i=1,table.getn(m[start]) do
+        if m[start][i]>0 then
+		    ok=0;
+			visited2=visited;
+		    indici=Euler:getIndici(start,i,g);
+			local indice_k=0;
+			for k=1,table.getn(indici) do
+                if	visited2[indici[k]]==0 then
+                    visited2[indici[k]]=1;
+					ok=1;
+					indice_k=k;
+					break;
+                end	
+			end
+			
+			if ok==1 then
+				n = Euler:DFS(i,visited2,m,g,noduri, pas, Deadlines);	
+				if table.getn(n)==table.getn(g)+1 then 
+					print('yas')
+					return n;
+				end
+			end
+			
+			
+		end
+   end
+   --print('No Euler Path found');
+   return {};
+   
+end

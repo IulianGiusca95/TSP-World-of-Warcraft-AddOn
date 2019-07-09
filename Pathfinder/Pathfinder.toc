@@ -1,0 +1,31 @@
+## Interface: 70200
+## Title: PathFinder
+## Notes: Acesta este addon-ul descris in lucrarea de diploma
+## DefaultState: enabled
+## Author: Iulian Giusca
+
+libs\LibStub\LibStub.lua
+libs\HereBeDragons-1.0\HereBeDragons-1.0.lua
+libs\HereBeDragons-1.0\HereBeDragons-Pins-1.0.lua
+
+init.lua
+removeExtra.lua
+constraintFunctions.lua
+QuestDistance.lua
+edges.lua
+minCostTree.lua
+parity.lua
+minperfectmatch.lua
+cuplajOptim.lua
+combineGraphs.lua
+matriceAdiacenta.lua
+eulerPath.lua
+adaugaScurtaturi.lua
+timeHandling.lua
+drawmap.lua
+PathFinder.lua
+main2.xml
+
+
+
+
