@@ -6,6 +6,8 @@ In short, given a set of towns which are connected by roads, a salesman wants to
 
 Using the World of Warcraft API which is made available by Blizzard, i extracted the coordinates of all currently available Quests (they are the Objectives) and tested different approaches to solve TSP. I have extended the problem by adding Time constraints (the average time it takes for a player to finish a quest) and Terrain constraints (some regions in-game are inaccessible to users, so the path between two Objectives can't always be straight)
 
+Documentation is available in the .pdf file attached (language: Romanian)
+
 # Running the Code
 
 In order to run the code, the World of Warcraft game is required. The project is an AddOn, which is meant to be used in-game by the players. For details on how to install the AddOn, see the link below:
